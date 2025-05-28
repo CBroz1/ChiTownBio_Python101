@@ -12,14 +12,16 @@
     },
     "vscode": {
       "extensions": [
+        "VisualStudioExptTeam.vscodeintellicode",
         "davidanson.vscode-markdownlint",
-        "ms-python.python",
+        "donjayamanne.vscode-default-python-kernel",
         "ms-python.black-formatter",
+        "ms-python.isort",
+        "ms-python.python",
         "ms-python.vscode-pylance",
         "ms-toolsai.jupyter",
         "ms-toolsai.jupyter-keymap",
-        "ms-toolsai.jupyter-renderers",
-        "VisualStudioExptTeam.vscodeintellicode"
+        "ms-toolsai.jupyter-renderers"
       ]
     }
   }

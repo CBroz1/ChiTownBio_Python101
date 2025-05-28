@@ -4,7 +4,6 @@
     "files.trimFinalNewlines": true,
     "remote.SSH.remoteServerListenOnSocket": true,
     "git.confirmSync": false,
-    "python.analysis.typeCheckingMode": "off",
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.formatOnSave": true,
@@ -15,5 +14,8 @@
     "isort.args": [
         "--profile",
         "black"
-    ]
+    ],
+    "editor.minimap.maxColumn": 80,
+    "notebook.formatOnCellExecution": true,
+    "notebook.formatOnSave.enabled": true,
 }
