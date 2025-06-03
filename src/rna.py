@@ -14,20 +14,21 @@ def validator(t: str = None, u: str = None) -> bool:
         return False
 
     # Check DNA string contains only A, C, G, T
-    for letter in t:
-        if letter not in "ACGT":
-            print(f"DNA string contains invalid character: {letter}")
-            return False
+    if invalid := (set(t) - set("ACGT")):
+        print(f"DNA string contains invalid character(s): {invalid}")
+        return False
 
     # Check RNA string contains only A, C, G, U
-    for letter in u:
-        if letter not in "ACGU":
-            print(f"RNA string contains invalid character: {letter}")
-            return False
+    if invalid := (set(u) - set("ACGU")):
+        print(f"RNA string contains invalid character(s): {invalid}")
+        return False
 
     # Check if lengths match
     if len(t) != len(u):
-        print(f"Length mismatch: DNA has {len(t)} characters, RNA has {len(u)} characters")
+        print(
+            "Length mismatch: "
+            + f"DNA has {len(t)} characters, RNA has {len(u)} characters"
+        )
         return False
 
     # Comment
@@ -38,13 +39,15 @@ def validator(t: str = None, u: str = None) -> bool:
     # Check if transcription is correct
     # Compare each position - should match except T->U
     for i, (dna_base, rna_base) in enumerate(zip(t, u)):
-        if dna_base == 'T':
-            if rna_base != 'U':
-                print(f"Transcription error at position {i}: expected 'U' for 'T', got '{rna_base}'")
-                return False
-        else:
-            if dna_base != rna_base:
-                print(f"Transcription error at position {i}: '{dna_base}' should remain '{dna_base}', not become '{rna_base}'")
-                return False
+        position_err = f"Transcription error at position {i}: "
+        if dna_base == "T" and rna_base != "U":
+            print(position_err + f"expected 'U' for 'T', got '{rna_base}'")
+            return False
+        elif dna_base != "T" and dna_base != rna_base:
+            print(
+                position_err
+                + f"'{dna_base}' should be the same, not become '{rna_base}'"
+            )
+            return False
 
     return True  # The solution is valid
