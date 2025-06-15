@@ -55,7 +55,7 @@ participants to tackle bioinformatics challenges and projects with confidence.
 
 | Session | Date | Bio Blurb     | Python Primer       | Hands-on                                                    |
 | ------- | ---- | ------------- | ------------------- | ----------------------------------------------------------- |
-| 0       | TBD  | n/a           | Tooling, Data Types | Codespaces                                                  |
+| 0       | 6/19/25  | n/a           | Tooling, Data Types | Codespaces                                                  |
 | 1       | TBD  | DNA           | Iteration                | [Counting Nucleotides](https://rosalind.info/problems/dna/) |
 | 2       | TBD  | Transcription | String Operations   | [Transcribing DNA](https://rosalind.info/problems/rna/)     |
 
