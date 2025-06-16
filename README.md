@@ -53,21 +53,21 @@ participants to tackle bioinformatics challenges and projects with confidence.
 
 ### Prelimary Schedule
 
-| Session | Date | Bio Blurb     | Python Primer       | Hands-on                                                    |
-| ------- | ---- | ------------- | ------------------- | ----------------------------------------------------------- |
-| 0       | 6/19/25  | n/a           | Tooling, Data Types | Codespaces                                                  |
-| 1       | TBD  | DNA           | Iteration                | [Counting Nucleotides](https://rosalind.info/problems/dna/) |
-| 2       | TBD  | Transcription | String Operations   | [Transcribing DNA](https://rosalind.info/problems/rna/)     |
+| Session | Date    | Bio Blurb     | Python Primer       | Hands-on                                                    |
+| ------- | ------- | ------------- | ------------------- | ----------------------------------------------------------- |
+| 0       | 6/19/25 | n/a           | Tooling, Data Types | Codespaces                                                  |
+| 1       | TBD     | DNA           | Iteration           | [Counting Nucleotides](https://rosalind.info/problems/dna/) |
+| 2       | TBD     | Transcription | String Operations   | [Transcribing DNA](https://rosalind.info/problems/rna/)     |
 
 ## Getting Started
 
-This course is designed to be run in a [GitHub
-Codespace](https://github.com/features/codespaces), which is an online
+This course is designed to be run in a [GitHub Codespace](https://github.com/features/codespaces),
+which is an online
 development environment. This allows you to run Python code directly in your
 browser, without needing to install anything on your local machine. Every
 GitHub user gets 60 free hours per month, well beyond what we will need for
 this course, but you will need to remember to **stop your codespace** when you
-are done with it.
+are done with it to avoid unnecessary use of your free hours.
 
 1. **Sign up for a GitHub account**: If you don't already have one, go to
    [GitHub](github.com) and sign up for a free account.
@@ -84,3 +84,8 @@ are done with it.
    `notebooks` folder and open the `00_Intro.ipynb` file. This is a Jupyter
    Notebook, which allows you to run Python code and write markdown in the same
    document.
+1. **Stop the Codespace**: When you are done with your codespace, make sure to
+   stop it by clicking the green button again, and then the three dots next to
+   'Acdive', and selecting "Stop Codespace". Alternatively, you can follow
+   [these instructions](https://docs.github.com/en/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace)
+   to interact with any of your codespaces.
